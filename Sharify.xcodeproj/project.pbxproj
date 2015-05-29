@@ -19,6 +19,7 @@
 		D8ED46BE1B17F73900A251B9 /* friends@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8ED46B81B17F73900A251B9 /* friends@2x.png */; };
 		D8ED46BF1B17F73900A251B9 /* inbox.png in Resources */ = {isa = PBXBuildFile; fileRef = D8ED46B91B17F73900A251B9 /* inbox.png */; };
 		D8ED46C01B17F73900A251B9 /* inbox@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D8ED46BA1B17F73900A251B9 /* inbox@2x.png */; };
+		D8ED46C41B17FD3100A251B9 /* InboxViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ED46C31B17FD3100A251B9 /* InboxViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		D8ED46B81B17F73900A251B9 /* friends@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "friends@2x.png"; sourceTree = "<group>"; };
 		D8ED46B91B17F73900A251B9 /* inbox.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = inbox.png; sourceTree = "<group>"; };
 		D8ED46BA1B17F73900A251B9 /* inbox@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "inbox@2x.png"; sourceTree = "<group>"; };
+		D8ED46C21B17FD3100A251B9 /* InboxViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InboxViewController.h; sourceTree = "<group>"; };
+		D8ED46C31B17FD3100A251B9 /* InboxViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InboxViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +93,12 @@
 		D8ED468E1B17F6D600A251B9 /* Sharify */ = {
 			isa = PBXGroup;
 			children = (
+				D8ED46C11B17F74500A251B9 /* Images */,
 				D8ED46931B17F6D600A251B9 /* AppDelegate.h */,
 				D8ED46941B17F6D600A251B9 /* AppDelegate.m */,
 				D8ED46991B17F6D600A251B9 /* Main.storyboard */,
-				D8ED46C11B17F74500A251B9 /* Images */,
+				D8ED46C21B17FD3100A251B9 /* InboxViewController.h */,
+				D8ED46C31B17FD3100A251B9 /* InboxViewController.m */,
 				D8ED469C1B17F6D600A251B9 /* Images.xcassets */,
 				D8ED469E1B17F6D600A251B9 /* LaunchScreen.xib */,
 				D8ED468F1B17F6D600A251B9 /* Supporting Files */,
@@ -248,6 +253,7 @@
 			files = (
 				D8ED46951B17F6D600A251B9 /* AppDelegate.m in Sources */,
 				D8ED46921B17F6D600A251B9 /* main.m in Sources */,
+				D8ED46C41B17FD3100A251B9 /* InboxViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
