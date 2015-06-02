@@ -24,7 +24,7 @@
             </objects>
             <point key="canvasLocation" x="93" y="752"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Friends-->
         <scene sceneID="bqr-oo-SV0">
             <objects>
                 <tableViewController id="ATn-kL-b7B" sceneMemberID="viewController">
@@ -45,11 +45,44 @@
                             <outlet property="delegate" destination="ATn-kL-b7B" id="IaW-Pp-Uwc"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="XtI-XV-eJ5"/>
+                    <navigationItem key="navigationItem" title="Friends" id="XtI-XV-eJ5">
+                        <barButtonItem key="rightBarButtonItem" title="Edit" id="Lue-lA-ogh">
+                            <connections>
+                                <segue destination="QFD-1D-311" kind="push" id="wfp-gc-aDf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QQc-se-LvR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1369" y="624"/>
+        </scene>
+        <!--Edit Friends-->
+        <scene sceneID="8oL-LP-c98">
+            <objects>
+                <tableViewController id="QFD-1D-311" customClass="EditFriendsTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="JPh-Rf-G7M">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="5S1-RR-04r">
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="5S1-RR-04r" id="8Ge-UH-Jvt">
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="QFD-1D-311" id="bx7-oY-ZQf"/>
+                            <outlet property="delegate" destination="QFD-1D-311" id="hGP-yQ-Ul8"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Edit Friends" id="5y2-wI-fM5"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8Iw-dq-s1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781" y="618"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="yvW-Di-bgw">
@@ -99,7 +132,13 @@
                             <outlet property="delegate" destination="FVQ-hV-tbN" id="wdw-6Z-1jd"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Sharify" id="aLX-2l-YK0"/>
+                    <navigationItem key="navigationItem" title="Sharify" id="aLX-2l-YK0">
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="rK5-Mh-YYf">
+                            <connections>
+                                <action selector="logout:" destination="FVQ-hV-tbN" id="QLQ-kS-xFs"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <segue destination="eMr-XV-OgS" kind="push" identifier="showLogin" id="trC-Om-eaT"/>
                     </connections>
@@ -111,7 +150,7 @@
         <!--Sharify-->
         <scene sceneID="5qV-5j-qBH">
             <objects>
-                <viewController id="eMr-XV-OgS" sceneMemberID="viewController">
+                <viewController id="eMr-XV-OgS" customClass="LoginViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="UHk-7d-mH5"/>
                         <viewControllerLayoutGuide type="bottom" id="Z9p-ef-adp"/>
@@ -135,6 +174,9 @@
                                 <state key="normal" title="Log In">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="loginButton:" destination="eMr-XV-OgS" eventType="touchUpInside" id="3t5-NQ-NQO"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Don't have an account?" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEG-yE-NXh">
                                 <rect key="frame" x="38" y="264" width="183" height="21"/>
@@ -154,6 +196,10 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sharify" id="UvH-I4-g6i"/>
+                    <connections>
+                        <outlet property="passwordField" destination="woC-cl-7MC" id="o9r-4l-Iqj"/>
+                        <outlet property="usernameField" destination="F0q-rp-yey" id="mD3-hA-pha"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zlu-ix-kBj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -162,7 +208,7 @@
         <!--Sharify-->
         <scene sceneID="xwO-Ed-RyT">
             <objects>
-                <viewController id="I0K-Ke-S5k" sceneMemberID="viewController">
+                <viewController id="I0K-Ke-S5k" customClass="SignUpViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="BFu-KK-fsw"/>
                         <viewControllerLayoutGuide type="bottom" id="RNO-Ig-jXo"/>
@@ -190,11 +236,19 @@
                                 <rect key="frame" x="120" y="263" width="80" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <state key="normal" title="Sign up"/>
+                                <connections>
+                                    <action selector="signupButton:" destination="I0K-Ke-S5k" eventType="touchUpInside" id="XF6-PF-1Kc"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Sharify" id="JYz-8e-jzv"/>
+                    <connections>
+                        <outlet property="emailField" destination="h8S-2k-sc1" id="qgH-U4-fHY"/>
+                        <outlet property="passwordField" destination="oSt-0X-d6h" id="8vQ-nQ-cDT"/>
+                        <outlet property="usernameField" destination="m5S-Z3-U34" id="yYE-MM-FZo"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QkZ-NV-6Ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
