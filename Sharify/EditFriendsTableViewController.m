@@ -16,6 +16,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    self.currentUser = [PFUser currentUser];
+}
+
+
+-(void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
     PFQuery *query = [PFUser query];
     [query orderByAscending:@"username"];
     [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error){
@@ -27,8 +34,6 @@
         }
     }];
     
-    self.currentUser = [PFUser currentUser];
-
 }
 
 #pragma mark - Table view data source
