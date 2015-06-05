@@ -132,7 +132,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="v6h-sd-9PE">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="v6h-sd-9PE">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="v6h-sd-9PE" id="btl-DY-Mqc">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -153,6 +153,7 @@
                     </navigationItem>
                     <connections>
                         <segue destination="eMr-XV-OgS" kind="push" identifier="showLogin" id="trC-Om-eaT"/>
+                        <segue destination="HV8-Lp-aZY" kind="push" identifier="showImage" id="25a-pW-zOj"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Kxn-Es-UMZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -265,6 +266,33 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QkZ-NV-6Ix" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2238" y="-38"/>
+        </scene>
+        <!--Image View Controller-->
+        <scene sceneID="Ztp-1F-eye">
+            <objects>
+                <viewController id="HV8-Lp-aZY" customClass="ImageViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Jmg-VR-msJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="RTb-eU-wo6"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="7Rv-Vs-WGQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xlu-h0-PRw">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YEi-xU-oYa"/>
+                    <connections>
+                        <outlet property="imageView" destination="xlu-h0-PRw" id="hd8-R9-9jw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zyK-bv-XSe" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781" y="-703"/>
         </scene>
         <!--Inbox-->
         <scene sceneID="C5p-MK-2Le">

@@ -122,7 +122,7 @@
         if(self.imagePicker.sourceType == UIImagePickerControllerSourceTypeCamera) {
             UIImageWriteToSavedPhotosAlbum(self.image, nil,nil,nil);
         }
-    } else if ( [mediaType isEqualToString:(NSString *)kUTTypeVideo]){
+    } else if ( [mediaType isEqualToString:@"public.movie"]){
         self.videoFilePath = (__bridge NSString *)([[info objectForKey:UIImagePickerControllerMediaURL] path]);
         if(self.imagePicker.sourceType == UIImagePickerControllerSourceTypeCamera) {
             if(UIVideoAtPathIsCompatibleWithSavedPhotosAlbum(self.videoFilePath)){

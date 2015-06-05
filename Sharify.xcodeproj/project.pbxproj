@@ -24,6 +24,12 @@
 		D84AC2EF1B1D346500AFE402 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D84AC2EE1B1D346500AFE402 /* libsqlite3.dylib */; };
 		D84AC2F11B1D34C100AFE402 /* Bolts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D84AC2F01B1D34C100AFE402 /* Bolts.framework */; };
 		D84CDCDA1B1E6B430091231F /* FriendsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D84CDCD91B1E6B430091231F /* FriendsTableViewController.m */; };
+		D851613B1B211EC600848F3D /* icon_image.png in Resources */ = {isa = PBXBuildFile; fileRef = D85161371B211EC600848F3D /* icon_image.png */; };
+		D851613C1B211EC600848F3D /* icon_image@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D85161381B211EC600848F3D /* icon_image@2x.png */; };
+		D851613D1B211EC600848F3D /* icon_video.png in Resources */ = {isa = PBXBuildFile; fileRef = D85161391B211EC600848F3D /* icon_video.png */; };
+		D851613E1B211EC600848F3D /* icon_video@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D851613A1B211EC600848F3D /* icon_video@2x.png */; };
+		D85161411B21226C00848F3D /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D85161401B21226C00848F3D /* ImageViewController.m */; };
+		D85161431B212A4000848F3D /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D85161421B212A4000848F3D /* MediaPlayer.framework */; };
 		D8A013381B1FC6D600597B29 /* CameraTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D8A013371B1FC6D600597B29 /* CameraTableViewController.m */; };
 		D8ED46921B17F6D600A251B9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ED46911B17F6D600A251B9 /* main.m */; };
 		D8ED46951B17F6D600A251B9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D8ED46941B17F6D600A251B9 /* AppDelegate.m */; };
@@ -72,6 +78,13 @@
 		D84AC2F01B1D34C100AFE402 /* Bolts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Bolts.framework; sourceTree = "<group>"; };
 		D84CDCD81B1E6B430091231F /* FriendsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FriendsTableViewController.h; sourceTree = "<group>"; };
 		D84CDCD91B1E6B430091231F /* FriendsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FriendsTableViewController.m; sourceTree = "<group>"; };
+		D85161371B211EC600848F3D /* icon_image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_image.png; sourceTree = "<group>"; };
+		D85161381B211EC600848F3D /* icon_image@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_image@2x.png"; sourceTree = "<group>"; };
+		D85161391B211EC600848F3D /* icon_video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_video.png; sourceTree = "<group>"; };
+		D851613A1B211EC600848F3D /* icon_video@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_video@2x.png"; sourceTree = "<group>"; };
+		D851613F1B21226C00848F3D /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		D85161401B21226C00848F3D /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		D85161421B212A4000848F3D /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		D8A013361B1FC6D600597B29 /* CameraTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraTableViewController.h; sourceTree = "<group>"; };
 		D8A013371B1FC6D600597B29 /* CameraTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraTableViewController.m; sourceTree = "<group>"; };
 		D8ED468C1B17F6D600A251B9 /* Sharify.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Sharify.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,6 +113,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D85161431B212A4000848F3D /* MediaPlayer.framework in Frameworks */,
 				D84AC2EF1B1D346500AFE402 /* libsqlite3.dylib in Frameworks */,
 				D84AC2EC1B1D339400AFE402 /* SystemConfiguration.framework in Frameworks */,
 				D84AC2EA1B1D338500AFE402 /* StoreKit.framework in Frameworks */,
@@ -129,6 +143,7 @@
 		D84AC2ED1B1D33A200AFE402 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D85161421B212A4000848F3D /* MediaPlayer.framework */,
 				D84AC2F01B1D34C100AFE402 /* Bolts.framework */,
 				D84AC2EE1B1D346500AFE402 /* libsqlite3.dylib */,
 				D84AC2D71B1D32DD00AFE402 /* Parse.framework */,
@@ -183,6 +198,8 @@
 				D84AC2CF1B1D2E3600AFE402 /* LoginViewController.m */,
 				D84CDCD81B1E6B430091231F /* FriendsTableViewController.h */,
 				D84CDCD91B1E6B430091231F /* FriendsTableViewController.m */,
+				D851613F1B21226C00848F3D /* ImageViewController.h */,
+				D85161401B21226C00848F3D /* ImageViewController.m */,
 				D8ED46991B17F6D600A251B9 /* Main.storyboard */,
 				D8ED469C1B17F6D600A251B9 /* Images.xcassets */,
 				D8ED469E1B17F6D600A251B9 /* LaunchScreen.xib */,
@@ -226,6 +243,10 @@
 				D8ED46B81B17F73900A251B9 /* friends@2x.png */,
 				D8ED46B91B17F73900A251B9 /* inbox.png */,
 				D8ED46BA1B17F73900A251B9 /* inbox@2x.png */,
+				D85161371B211EC600848F3D /* icon_image.png */,
+				D85161381B211EC600848F3D /* icon_image@2x.png */,
+				D85161391B211EC600848F3D /* icon_video.png */,
+				D851613A1B211EC600848F3D /* icon_video@2x.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -310,15 +331,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D851613D1B211EC600848F3D /* icon_video.png in Resources */,
 				D8ED469B1B17F6D600A251B9 /* Main.storyboard in Resources */,
 				D8ED46BD1B17F73900A251B9 /* friends.png in Resources */,
+				D851613B1B211EC600848F3D /* icon_image.png in Resources */,
 				D8ED46BE1B17F73900A251B9 /* friends@2x.png in Resources */,
 				D8ED46BC1B17F73900A251B9 /* camera@2x.png in Resources */,
 				D8ED46BF1B17F73900A251B9 /* inbox.png in Resources */,
 				D8ED46A01B17F6D600A251B9 /* LaunchScreen.xib in Resources */,
+				D851613C1B211EC600848F3D /* icon_image@2x.png in Resources */,
 				D8ED46BB1B17F73900A251B9 /* camera.png in Resources */,
 				D8ED469D1B17F6D600A251B9 /* Images.xcassets in Resources */,
 				D8ED46C01B17F73900A251B9 /* inbox@2x.png in Resources */,
+				D851613E1B211EC600848F3D /* icon_video@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +367,7 @@
 				D8ED46951B17F6D600A251B9 /* AppDelegate.m in Sources */,
 				D8ED46921B17F6D600A251B9 /* main.m in Sources */,
 				D84CDCDA1B1E6B430091231F /* FriendsTableViewController.m in Sources */,
+				D85161411B21226C00848F3D /* ImageViewController.m in Sources */,
 				D8A013381B1FC6D600597B29 /* CameraTableViewController.m in Sources */,
 				D8ED46C41B17FD3100A251B9 /* InboxViewController.m in Sources */,
 			);
